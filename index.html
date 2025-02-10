@@ -559,8 +559,22 @@
 
                     <div class="lc-block mb-3">
                         <div editable="rich">
-                            <p class="lead">Este proyecto ofrece un buscador avanzado que permite a los usuarios filtrar vehiculos segun su criterio ya sea marca, año, precio etc..
-                            </p>
+                            <p>Esta página es un <strong>buscador de autos</strong> que permite a los usuarios filtrar vehículos según múltiples criterios, como marca, año, precio, número de puertas, tipo de transmisión y color. La interfaz está diseñada con <strong>HTML</strong> y <strong>CSS</strong>.</p>
+
+                                        <h2>Herramientas utilizadas</h2>
+                                        <ul>
+                                          <li><strong>Manipulación del DOM:</strong> Se usan <code>document.querySelector()</code> para obtener elementos y <code>appendChild()</code> para insertar contenido dinámico.</li>
+                                          <li><strong>Eventos:</strong> Se emplean <code>EventListeners</code> para actualizar el objeto <code>datosBusqueda</code> al seleccionar opciones y <code>DOMContentLoaded</code> para ejecutar funciones al cargar la página.</li>
+                                          <li><strong>Objetos:</strong> <code>datosBusqueda</code> almacena los filtros seleccionados por el usuario.</li>
+                                          <li><strong>Arreglos y Métodos:</strong> Se usa <code>filter()</code> para filtrar autos y <code>forEach()</code> para mostrar los resultados en el DOM.</li>
+                                          <li><strong>Funciones:</strong>
+                                            <ul>
+                                              <li><code>mostrarAutos()</code>: Muestra todos los autos.</li>
+                                              <li><code>llenarSelectYear()</code>: Genera los años en el formulario.</li>
+                                              <li><code>filtrarAuto()</code>: Filtra autos según los criterios.</li>
+                                            </ul>
+                                          </li>
+                                        </ul>
                         </div>
                     </div>
 
